@@ -1,0 +1,19 @@
+a{color:#dd4f24}
+body{background:#e8e8e8;font-family:Arial;font-size:16px}
+label{display:inline-block;width:60px;background:#dd4f24;padding:.1em;text-align:center}
+header{background:#444;box-shadow:0 5px 0 rgba(0,0,0,0.2);color:#fff;overflow:hidden;padding:.5em;position:relative;z-index:2;}
+header .logo{width:120px;float:left;border-right:1px solid #dd4f24;}
+header .logo img{height:80px;width:80px}
+header .iniciosesion{text-shadow:1px 1px 0 #000;}
+header .iniciosesion .titulo{margin:0 180px 0 70px;font-size:20px;font-weight:normal;margin:0;padding:0}
+header .iniciosesion .registro{float:right;}
+header .iniciosesion .registro .usuario{padding:.2em;}
+header .iniciosesion .registro .usuario input{font-size:14px}
+header .iniciosesion .registro .clave{padding:.2em;}
+header .iniciosesion .registro .clave input{font-size:14px}
+header .iniciosesion .registro .iniciar{padding:.2em;}
+header .iniciosesion .registro .iniciar a{color:#fff;text-decoration:none;background:#dd4f24;padding:.1em}
+header .iniciosesion .registro .iniciar .ingresar{margin-right:12.5px}
+header .iniciosesion .bienvenida{display:none;float:right;}
+header .iniciosesion .bienvenida .bienvenido{float:left;margin-top:0}
+header .iniciosesion .bienvenida .usuario{float:right}

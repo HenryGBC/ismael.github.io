@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta class="viewport"
+			content="width=device-width, initial-scale=1,
+			maximun-scale=1"/>
+	<link rel="stylesheet" href="css/normalize.css"/>
+	<link rel="stylesheet" href="css/ismaels.css"/>
+	<title>Ismael's</title>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img src="imagenes/logo.png" alt="Ismaels">
+			
+		</div>	
+		
+		<div class="iniciosesion">
+				<h1 class="titulo">De la cocina de Ismael a su casa</h1>		
+				<div class="registro">
+					<form action="" class="formulario">
+						<div class="usuario">
+								<label for="titulo">Usuario</label>
+								<input placeholder ="Usuario" id="usuario" type="text" name="usuario" size ="10">
+						</div>
+						<div class="clave">	
+								<label for="clave">Clave</label>
+								<input placeholder ="Clave" id="clave" type="text" name="usuario" size = "10">	
+						</div>
+					</form>
+					<div class="iniciar">
+						<a href="#" class="ingresar">
+							 Ingresar
+						</a>
+						<a href="#" class="registrarse">
+							 Registrarse
+						</a>
+					</div>	
+				</div>
+				<div class ="bienvenida">
+						<h3 class="bienvenido">Bienvenido</h3>
+						<span class="usuario">Henry</span>
+				</div>	
+		</div>
+
+		
+	</header>
+	
+	<nav class="menu">
+		<ul>
+			<li><a href="#">Inicio</a></li>
+			<li><a href="#">Contacto</a></li>
+			<li><a href="#">Pedidos realizados</a></li>
+			<li><a href="#">Sugerencias</a></li>
+
+		</ul>
+	</nav>
+
+	<section class="menu_semana">
+		<span class="titulo_menu">Menu de la semana</span>
+		 <article class="platosms">
+		 	<iframe src="imagenes/platos/hallacas.jpg" class="platoms"></iframe>
+		 	<a href="#" class="platosms">Hallaca</a>
+		 </article>
+		  <article class="platosms">
+		 	<iframe src="imagenes/platos/hallacas.jpg" class="platoms"></iframe>
+		 	<a href="#" class="platosms">Pasta a la Marinera</a>
+		 </article>
+		  <article class="platosms">
+		 	<iframe src="imagenes/platos/hallacas.jpg" class="platoms"></iframe>
+		 	<a href="#" class="platosms">Chupe</a>
+		 </article>
+	</section>
+	<section class="seleccionarplato">
+		<iframe src="/imagenes/platos/hallacas.jpg" class="platosp"></iframe>
+		<div class="descripcion">
+			<h3 class="titulosp">Hallaca</h3>
+			<span class="tituloingredientes"><strong>Ingredientes</strong></span>
+			<p><span class="ingredientes">
+				Harina pan, alcaparras, aceitunas,
+				pasas, carne de res, carne de cerdo,
+				garbanzos...
+			</span></p>
+			<span class="precio"><strong>Precio: </strong> 30Bsf</span>
+		</div>
+		<div class="ordenar">
+			<form action="" class ="formcatidad">
+				<span class ="tcantidad"> <strong>Cantidad
+				</strong></span>
+				<input type="number" id = "cantidad" 
+				name="usuario" size ="4">	
+			</form>
+			<a href="#" class="anadir">
+				Añadir
+			</a>	
+		</div>
+
+	</section>
+
+	<section class="pedido">
+		<article class="plato">
+			<span class="nomplato">
+				<strong>Hallaca</strong>
+			</span>
+			<span class="cantidad">
+				<strong>
+					5
+				</strong>
+			</span>
+		</article>
+
+		<div class = "total">
+			Total:<span id = "totalbs"><strong> 
+ 			</strong> 150</span>
+ 			<span></span>
+		</div>
+	</section>
+</body>
+</html>
