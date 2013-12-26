@@ -36,15 +36,18 @@ header
 
 	.iniciosesion
 		text-shadow 1px 1px 0px black
-
+		
 		.titulo
 			margin 0 180px 0 70px
 			font-size 20px
 			font-weight normal
 			margin 0
 			padding 0
+
 		.registro
-			float right	
+			float right
+			right 10px
+			top -15px
 			.usuario
 				padding 0.2em
 				input 
@@ -56,6 +59,7 @@ header
 
 			.iniciar
 				padding 0.2em
+
 				a
 					color white
 					text-decoration none
@@ -64,6 +68,9 @@ header
 
 				.ingresar
 					margin-right 12.5px
+					box-shadow 1px 1px 0px black
+				.registrarse
+					box-shadow 1px 1px 0px black
 		.bienvenida
 			display none
 			float right
@@ -75,9 +82,78 @@ header
 				
 				
 		
-	
+nav
+	background naranja
+	border-left 15px solid white
+	position relative
+	&:before
+		border-bottom 20px solid transparent
+		border-left 7px solid white
+		border-top 20px solid transparent
+		content ""
+		left 0px
+		position absolute
+		top 0
 		
 
+	.menu
+		height 40px
+		line-height 40px
+		margin 0
+		padding 0
+		overflow-x auto
+		overflow-y hidden
+		white-space nowrap
+
+		&::-webkit-scrollbar
+			display none
+
+
+
+
+		li
+			display inline-block
+
+		a
+			
+			color white
+			display block
+			margin 0 0.5em
+			padding 0 0.2em
+			text-decoration none
+			
+			
+			&:hover
+				background rgba(black,0.1)
+
+
+	
+
+.menu_semana
+	height 120px
+	border 5px
+	background gris_oscuro
+	margin-top 50px
+	white-space nowrap
+	overflow-x auto
+	.platosms
+		display inline-block
+		padding 0.5em
+
+		.platoms
+			
+			img
+				height 50px
+				width 50px
+				border-radius 50%
+		.nom_plato
+			background naranja
+			color white
+			text-decoration none
+			padding 0.2em
+			&:hover
+				background rgba(black,0.1)
+				
 
 
 	
