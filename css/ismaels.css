@@ -1,10 +1,22 @@
+@font-face{font-family:'iconos';src:url("../fonts/icomoon.eot");src:url("../fonts/icomoon.eot?#iefix") format('embedded-opentype'),url("../fonts/icomoon.ttf") format('truetype'),url("../fonts/icomoon.woff") format('woff'),url("../fonts/icomoon.svg#icomoon") format('svg');font-weight:normal;font-style:normal}
 a{color:#dd4f24}
 body{background:#e8e8e8;font-family:Arial;font-size:16px}
 label{display:inline-block;width:60px;background:#dd4f24;padding:.1em;text-align:center}
+footer{background:#dd4f24;color:rgba(255,255,255,0.5);padding:1em 0;text-align:center;width:100%;}
+footer h3{font-size:14px;font-weight:normal;}
+footer h3 strong{display:block}
+footer h3 .mejor:before,footer h3 .mejor:after{content:"-"}
 header{background:#444;box-shadow:0 5px 0 rgba(0,0,0,0.2);color:#fff;overflow:hidden;padding:.5em;position:relative;z-index:2;}
+header h1{font-family:'Autour One',cursive}
 header .logo{width:120px;float:left;border-right:1px solid #dd4f24;}
 header .logo img{height:80px;width:80px}
 header .iniciosesion{text-shadow:1px 1px 0 #000;}
+header .iniciosesion .redes{margin-top:60px;margin-left:120px;}
+header .iniciosesion .redes a{text-decoration:none;color:#fff;padding:.1em}
+header .iniciosesion .redes .twitter:after{content:"\e602";font-family:iconos}
+header .iniciosesion .redes .facebook:after{content:"\e603";font-family:iconos}
+header .iniciosesion .redes .gplus:after{content:"\e604";font-family:iconos}
+header .iniciosesion .redes .mail:after{content:"\e607";font-family:iconos}
 header .iniciosesion .titulo{margin:0 180px 0 70px;font-size:20px;font-weight:normal;margin:0;padding:0}
 header .iniciosesion .registro{float:right;right:10px;top:-15px;}
 header .iniciosesion .registro .usuario{padding:.2em;}
@@ -13,7 +25,8 @@ header .iniciosesion .registro .clave{padding:.2em;}
 header .iniciosesion .registro .clave input{font-size:14px}
 header .iniciosesion .registro .iniciar{padding:.2em;}
 header .iniciosesion .registro .iniciar a{color:#fff;text-decoration:none;background:#dd4f24;padding:.1em}
-header .iniciosesion .registro .iniciar .ingresar{margin-right:12.5px;box-shadow:1px 1px 0 #000}
+header .iniciosesion .registro .iniciar .ingresar{margin-right:12.5px;box-shadow:1px 1px 0 #000;}
+header .iniciosesion .registro .iniciar .ingresar:before{content:"\e605";font-family:iconos}
 header .iniciosesion .registro .iniciar .registrarse{box-shadow:1px 1px 0 #000}
 header .iniciosesion .bienvenida{display:none;float:right;}
 header .iniciosesion .bienvenida .bienvenido{float:left;margin-top:0}
@@ -25,8 +38,41 @@ nav .menu::-webkit-scrollbar{display:none}
 nav .menu li{display:inline-block}
 nav .menu a{color:#fff;display:block;margin:0 .5em;padding:0 .2em;text-decoration:none;}
 nav .menu a:hover{background:rgba(0,0,0,0.1)}
-.menu_semana{height:120px;border:5px;background:#444;margin-top:50px;white-space:nowrap;overflow-x:auto;}
-.menu_semana .platosms{display:inline-block;padding:.5em;}
-.menu_semana .platosms .platoms img{height:50px;width:50px;border-radius:50%}
-.menu_semana .platosms .nom_plato{background:#dd4f24;color:#fff;text-decoration:none;padding:.2em;}
-.menu_semana .platosms .nom_plato:hover{background:rgba(0,0,0,0.1)}
+.menu_semana{height:120px;border:5px;box-shadow:1px 1px 1px 1px #000;background:#444;margin-top:50px;white-space:nowrap;overflow-x:auto;}
+.menu_semana::-webkit-scrollbar{display:none}
+.menu_semana .platosms{display:inline-block;padding:1em;position:relative;}
+.menu_semana .platosms .platoms{text-align:center;position:relative;}
+.menu_semana .platosms .platoms:after{content:"\e608";font-family:iconos;color:#fff;background:#dd4f24;position:absolute;border-radius:10%;top:20px;width:25px}
+.menu_semana .platosms .platoms img{height:50px;width:50px;border-radius:50%;}
+.menu_semana .platosms .platoms img:hover{height:60px;width:60px}
+.menu_semana .platosms .nom_plato{background:#dd4f24;color:#fff;text-decoration:none;text-align:center;padding:.2em}
+.menu_semana .platosms .icono_agregar{background:#dd4f24;color:#fff;padding:2px;top:20px;position:absolute;text-align:right;text-decoration:none;width:30px;height:15px;z-index:5;}
+.menu_semana .platosms .icono_agregar:after{content:"\e600";font-family:iconos}
+.seleccionarplato .slider img{width:80%}
+.seleccionarplato .descripcion{background:#444;box-shadow:1px 1px 1px 1px #000;color:#fff;}
+.seleccionarplato .descripcion .titulosp{text-align:center;color:#dd4f24}
+.seleccionarplato .descripcion .tituloingredientes{text-align:center;font-size:16px;color:#dd4f24}
+.seleccionarplato .descripcion .precio strong{color:#dd4f24}
+.seleccionarplato .ordenar{margin-top:10px;position:relative;padding:.5em;}
+.seleccionarplato .ordenar .anadir{background:#dd4f24;color:#fff;position:absolute;text-decoration:none;padding:.3em;left:150px;bottom:8px;}
+.seleccionarplato .ordenar .anadir:before{content:"\e608";font-family:iconos}
+.seleccionarplato .ordenar input{width:50px}
+.pedido{text-align:center;padding:1.5em;background:#444;color:#fff;margin-bottom:70px;box-shadow:1px 1px 1px 1px #000;}
+.pedido .plato{padding:.5em;}
+.pedido .plato a{background:#dd4f24;color:#fff;text-decoration:none;padding:.2em;}
+.pedido .plato a:after{content:"\e601";font-family:iconos;margin-left:10px}
+.pedido .total{padding:.2em}
+.pedido .realizarpedido{background:#dd4f24;color:#fff;text-decoration:none;margin-top:-10px;padding:.2em;}
+.pedido .realizarpedido:after{content:"\e606";font-family:iconos;margin-left:10px}
+@media screen and (min-width: 768px){header .iniciosesion .registro{margin-top:-25px}
+header .iniciosesion .redes{margin-top:40px}
+.seleccionarplato .slider img{width:40%;height:300px;margin-left:10px}
+.seleccionarplato .descripcion{box-shadow:-1px -1px 1px 1px #000;float:right;width:300px;height:330px;margin-top:-330px;position:relative}
+.seleccionarplato .ordenar{float:right;position:relative;margin-right:170px;}
+.seleccionarplato .ordenar .anadir{padding:.2em;width:80px}
+.menu_semana{float:left;width:300px;height:350px;margin-top:-10px;overflow-y:scroll;}
+.menu_semana .platosms{display:block;position:relative;}
+.menu_semana .platosms .platoms{margin-left:150px}
+.menu_semana .platosms .nom_plato{position:absolute;top:30px}
+.pedido{margin-top:80px}
+}

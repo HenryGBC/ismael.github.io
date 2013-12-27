@@ -1,5 +1,17 @@
 gris_oscuro = #444
 naranja = #DD4F24
+
+@font-face {
+	font-family: 'iconos';
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 a 
 	color naranja	
 body
@@ -12,6 +24,23 @@ label
 	background naranja
 	padding 0.1em
 	text-align center
+footer
+	background naranja
+	color rgba(white,0.5)
+	padding 1em 0
+	text-align center
+	width 100%
+
+	h3
+		font-size 14px
+		font-weight normal
+
+		strong 
+			display block
+		.mejor
+			&:before
+			&:after
+				content "-"
 
 header
 	background gris_oscuro
@@ -21,7 +50,8 @@ header
 	padding 0.5em
 	position relative
 	z-index 2
-	
+	h1
+		font-family: 'Autour One', cursive;
 	.logo
 		width 120px
 		float left
@@ -37,6 +67,35 @@ header
 	.iniciosesion
 		text-shadow 1px 1px 0px black
 		
+		.redes
+			margin-top 60px
+			margin-left 120px
+
+			a
+				text-decoration none
+				color white
+				padding 0.1em 
+			.twitter
+				&:after
+					content "\e602"
+					font-family iconos
+			.facebook
+				&:after
+					content "\e603"
+					font-family iconos
+			.gplus
+				&:after
+					content "\e604"
+					font-family iconos
+			.mail
+				&:after
+					content "\e607"
+					font-family iconos				
+
+			
+				
+				
+
 		.titulo
 			margin 0 180px 0 70px
 			font-size 20px
@@ -48,6 +107,7 @@ header
 			float right
 			right 10px
 			top -15px
+
 			.usuario
 				padding 0.2em
 				input 
@@ -59,7 +119,6 @@ header
 
 			.iniciar
 				padding 0.2em
-
 				a
 					color white
 					text-decoration none
@@ -69,6 +128,11 @@ header
 				.ingresar
 					margin-right 12.5px
 					box-shadow 1px 1px 0px black
+					&:before
+						content "\e605"
+						font-family iconos
+
+						
 				.registrarse
 					box-shadow 1px 1px 0px black
 		.bienvenida
@@ -132,35 +196,195 @@ nav
 .menu_semana
 	height 120px
 	border 5px
+	box-shadow 1px 1px 1px 1px black
 	background gris_oscuro
 	margin-top 50px
 	white-space nowrap
 	overflow-x auto
+	&::-webkit-scrollbar
+			display none
+
 	.platosms
 		display inline-block
-		padding 0.5em
+		padding 1em
+		position relative
+		
 
 		.platoms
-			
+			text-align center
+			position relative
+			&:after
+				content "\e608"
+				font-family iconos
+				color white
+				background naranja
+				position absolute
+				border-radius 10%
+				top 20px
+				width 25px
+				
 			img
 				height 50px
 				width 50px
 				border-radius 50%
+				
+
+				&:hover
+					height 60px
+					width 60px
 		.nom_plato
 			background naranja
 			color white
 			text-decoration none
+			text-align center
 			padding 0.2em
-			&:hover
-				background rgba(black,0.1)
+			
+		
+		
+		.icono_agregar
+			background naranja	
+			color white
+			padding 2px
+			top 20px
+			position absolute
+			text-align right 
+			text-decoration none
+			width 30px
+			height 15px
+			z-index 5
+			&:after
+				content "\e600"
+				font-family iconos
+
+.seleccionarplato
+	
+	.slider
+		img
+			width 80%
 				
-
+	.descripcion
+		background gris_oscuro
+		box-shadow 1px 1px 1px 1px black
+		color white
+		.titulosp
+			text-align center
+			color naranja
+		.tituloingredientes
+			text-align center
+			font-size 16px
+			color naranja
+		.precio
+			strong
+				color naranja
 
 	
 
-	
+	.ordenar
+		margin-top 10px
+		position relative
+		padding 0.5em
+		
+
+		.anadir	
+			background naranja 
+			color white
+			position absolute
+			text-decoration none
+			padding 0.3em
+			left 150px
+			bottom 8px
+			&:before
+				content "\e608"
+				font-family iconos
+
+
+		input
+			width 50px
+
+
+.pedido
+	text-align center
+	padding 1.5em
+	background gris_oscuro
+	color white
+	margin-bottom 70px
+	box-shadow 1px 1px 1px 1px black
+	.plato
+		padding 0.5em
+
+		a
+			background naranja
+			color white
+			text-decoration none
+			padding 0.2em
+			&:after
+				content "\e601"
+				font-family iconos
+				margin-left 10px
+	.total
+		padding 0.2em
+	.realizarpedido
+		background naranja
+		color white
+		text-decoration none
+		margin-top -10px
+		padding 0.2em
+		&:after
+			content "\e606"
+			font-family iconos
+			margin-left 10px
 
 		
 
 
+@media screen and (min-width: 768px)
 
+	header
+		.iniciosesion
+			.registro
+				margin-top -25px
+			.redes
+				margin-top 40px	
+
+	
+	.seleccionarplato
+		
+		.slider
+			
+			img
+				width  40%
+				height 300px
+				margin-left 10px
+		.descripcion
+			box-shadow -1px -1px 1px 1px black
+			float right
+			width 300px
+			height 330px
+			margin-top -330px
+			position relative
+		.ordenar
+			float right
+			position relative
+			margin-right 170px
+			.anadir
+				padding 0.2em
+				width 80px
+	
+	.menu_semana
+		float left
+		width  300px
+		height 350px
+		margin-top -10px
+		overflow-y scroll 
+		.platosms
+			display block
+			position relative
+			.platoms
+				margin-left 150px
+
+			.nom_plato
+				position absolute
+				top 30px
+
+	.pedido
+		margin-top 80px
