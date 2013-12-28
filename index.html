@@ -5,13 +5,22 @@
 	<meta class="viewport"
 			content="width=device-width, initial-scale=1,
 			maximun-scale=1"/>
-	<link rel="stylesheet" href="css/normalize.css"/>
-	<link rel="stylesheet" href="css/ismaels.css"/>
-	<link href='http://fonts.googleapis.com/css?family=Autour+One' rel='stylesheet' type='text/css'>
 	<title>Ismael's</title>
+	<link rel="stylesheet" href="css/normalize.css"/>
+	<link href='http://fonts.googleapis.com/css?family=Autour+One' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/ismaels.css"/>
+	<script src="js/jquery-2.0.3.min.js"></script>
+	<script src="js/ismaels.js"></script>
+	<script src="js/mq-events.js"></script>
+	<script src="js/jquery.musliderEN-1.0.min.js"></script>
 	
+	<script type="text/javascript">
+	
+		
+	</script>	
 	
 
+	
 
 </head>
 <body>
@@ -117,31 +126,38 @@
 		 	<span class="nom_plato">Pollo a la Suiza</span></a>
 		 </article>
 	</section>
+	<section class="imagencentral">
+		<figure class="platoimg">
+			<img src="imagenes/platos/hallacas2.jpg" alt="">
+
+		</figure>
+	</section>
 	<section class="seleccionarplato">
 	
-		<div class="slider">
-			<ul>
-				<li><img src="imagenes/platos/pollo_suiza.jpg" alt="Pollo a la suiza"></li>
-				
-			</ul>
-		</div>
+		
 
 		<div class="descripcion">
-			<h3 class="titulosp">Hallaca</h3>
+			<input type="hidden" name="tituloplato" value="Hallaca"/>
+			<h3 id ="titulo_plato" class="titulosp">Hallaca</h3>
 			<span class="tituloingredientes"><strong>Ingredientes:</strong></span>
-			<p><span class="ingredientes">
-				Harina pan, alcaparras, aceitunas,
-				pasas, carne de res, carne de cerdo,
-				garbanzos...
-			</span></p>
+			<div class="ingredientes">
+				<ul>
+					<li>Harina de maiz</li>
+					<li>Alcaparras</li>
+					<li>Aceitunas</li>
+					<li>Pasas</li>
+					<li>Carne de res</li>
+					<li>Carne de cerdo</li>
+					<li>Garbanzos</li>
+				</ul>
+			</div>
 			<span class="precio"><strong>Precio: </strong> 30Bsf</span>
 		</div>
 		<div class="ordenar">
 			<form action="" class ="formcatidad">
 				<span class ="tcantidad"> <strong>Cantidad
 				</strong></span>
-				<input type="number" id = "cantidad" 
-				name="usuario" size ="4">	
+				<input type="number" name="cantidad" size ="4">	
 			</form>
 			<a href="#" class="anadir">
 				Añadir
@@ -151,7 +167,8 @@
 	</section>
 
 	<section class="pedido">
-		<article class="plato">
+		<!--<div class="aviso_pedido"><strong>PLATOS AÑADIDOS</strong></div>-->
+		<article id ="plato_pedido" class="plato">
 			<a href="#">
 				<span class="nomplato">
 					<strong>Hallaca</strong>
@@ -159,31 +176,6 @@
 				<span class="cantidad">
 					<strong>
 						5
-					</strong>
-				</span>
-			</a>
-		</article>
-		<article class="plato">
-			<a href="#">
-				<span class="nomplato">
-					<strong>Paella</strong>
-				</span>
-				<span class="cantidad">
-					<strong>
-						1
-					</strong>
-				</span>
-			</a>
-		</article>
-		
-		<article class="plato">
-			<a href="#">
-				<span class="nomplato">
-					<strong>Chupe</strong>
-				</span>
-				<span class="cantidad">
-					<strong>
-						1
 					</strong>
 				</span>
 			</a>

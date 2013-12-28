@@ -38,7 +38,7 @@ nav .menu::-webkit-scrollbar{display:none}
 nav .menu li{display:inline-block}
 nav .menu a{color:#fff;display:block;margin:0 .5em;padding:0 .2em;text-decoration:none;}
 nav .menu a:hover{background:rgba(0,0,0,0.1)}
-.menu_semana{height:120px;border:5px;box-shadow:1px 1px 1px 1px #000;background:#444;margin-top:50px;white-space:nowrap;overflow-x:auto;}
+.menu_semana{height:120px;border:5px;box-shadow:1px 1px 1px 1px #000;background:#444;margin-top:50px;white-space:nowrap;overflow-x:auto;border-left:10px inset #dd4f24;border-right:10px inset #dd4f24;border-top:10px inset #dd4f24;border-bottom:10px inset #dd4f24;}
 .menu_semana::-webkit-scrollbar{display:none}
 .menu_semana .platosms{display:inline-block;padding:1em;position:relative;}
 .menu_semana .platosms .platoms{text-align:center;position:relative;}
@@ -48,31 +48,39 @@ nav .menu a:hover{background:rgba(0,0,0,0.1)}
 .menu_semana .platosms .nom_plato{background:#dd4f24;color:#fff;text-decoration:none;text-align:center;padding:.2em}
 .menu_semana .platosms .icono_agregar{background:#dd4f24;color:#fff;padding:2px;top:20px;position:absolute;text-align:right;text-decoration:none;width:30px;height:15px;z-index:5;}
 .menu_semana .platosms .icono_agregar:after{content:"\e600";font-family:iconos}
-.seleccionarplato .slider img{width:80%}
-.seleccionarplato .descripcion{background:#444;box-shadow:1px 1px 1px 1px #000;color:#fff;}
+.imagencentral .platoimg{text-align:center;margin-top:10px;}
+.imagencentral .platoimg img{border-top:10px ridge #444;border-bottom:10px ridge #444;border-left:10px ridge #444;border-right:10px ridge #444;border-radius:10%;width:70%}
+.seleccionarplato .descripcion{background:#444;box-shadow:1px 1px 1px 1px #000;color:#fff;border-left:10px inset #dd4f24;border-right:10px inset #dd4f24;border-top:10px inset #dd4f24;border-bottom:10px inset #dd4f24;}
 .seleccionarplato .descripcion .titulosp{text-align:center;color:#dd4f24}
 .seleccionarplato .descripcion .tituloingredientes{text-align:center;font-size:16px;color:#dd4f24}
 .seleccionarplato .descripcion .precio strong{color:#dd4f24}
-.seleccionarplato .ordenar{margin-top:10px;position:relative;padding:.5em;}
+.seleccionarplato .ordenar{margin-top:10px;margin-bottom:30px;position:relative;padding:.5em;}
 .seleccionarplato .ordenar .anadir{background:#dd4f24;color:#fff;position:absolute;text-decoration:none;padding:.3em;left:150px;bottom:8px;}
 .seleccionarplato .ordenar .anadir:before{content:"\e608";font-family:iconos}
 .seleccionarplato .ordenar input{width:50px}
-.pedido{text-align:center;padding:1.5em;background:#444;color:#fff;margin-bottom:70px;box-shadow:1px 1px 1px 1px #000;}
+.pedido{text-align:center;padding:1.5em;background:#444;color:#fff;margin-bottom:70px;box-shadow:1px 1px 1px 1px #000;position:relative;}
+.pedido .aviso_pedido{background:#dd4f24;width:200px;position:absolute;padding:.5em;bottom:180px;left:30%;box-shadow:0 -1px 0 0 #000;}
+.pedido .aviso_pedido:before{border-left:25px solid #444;border-bottom:10px solid #444;border-top:20px solid transparent;content:"";position:absolute;left:0;top:20px}
+.pedido .aviso_pedido:after{border-right:25px solid #444;border-bottom:10px solid #444;border-top:20px solid transparent;content:"";position:absolute;left:89%;top:17px}
 .pedido .plato{padding:.5em;}
-.pedido .plato a{background:#dd4f24;color:#fff;text-decoration:none;padding:.2em;}
+.pedido .plato a{background:#dd4f24;color:#fff;text-decoration:none;padding:.1em;}
 .pedido .plato a:after{content:"\e601";font-family:iconos;margin-left:10px}
 .pedido .total{padding:.2em}
 .pedido .realizarpedido{background:#dd4f24;color:#fff;text-decoration:none;margin-top:-10px;padding:.2em;}
 .pedido .realizarpedido:after{content:"\e606";font-family:iconos;margin-left:10px}
-@media screen and (min-width: 768px){header .iniciosesion .registro{margin-top:-25px}
+.pedido .realizarpedido:hover{font-size:18px}
+@media screen and (min-width: 768px){footer{position:relative;top:400px}
+header .iniciosesion .registro{margin-top:-25px}
 header .iniciosesion .redes{margin-top:40px}
-.seleccionarplato .slider img{width:40%;height:300px;margin-left:10px}
-.seleccionarplato .descripcion{box-shadow:-1px -1px 1px 1px #000;float:right;width:300px;height:330px;margin-top:-330px;position:relative}
-.seleccionarplato .ordenar{float:right;position:relative;margin-right:170px;}
+.imagencentral{width:40%;height:40%;position:relative;left:400px;display:block;}
+.imagencentral .platoimg{position:absolute;width:100%;top:-45px;}
+.imagencentral .platoimg img{margin:0 auto;width:80%}
+.seleccionarplato .descripcion{box-shadow:-1px -1px 1px 1px #000;float:right;width:300px;height:350px;position:relative}
+.seleccionarplato .ordenar{float:right;left:130px;top:350px;}
 .seleccionarplato .ordenar .anadir{padding:.2em;width:80px}
 .menu_semana{float:left;width:300px;height:350px;margin-top:-10px;overflow-y:scroll;}
 .menu_semana .platosms{display:block;position:relative;}
 .menu_semana .platosms .platoms{margin-left:150px}
 .menu_semana .platosms .nom_plato{position:absolute;top:30px}
-.pedido{margin-top:80px}
+.pedido{position:relative;margin-top:80px;top:380px;padding:3em}
 }

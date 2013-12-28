@@ -201,6 +201,10 @@ nav
 	margin-top 50px
 	white-space nowrap
 	overflow-x auto
+	border-left 10px inset naranja
+	border-right 10px inset naranja
+	border-top 10px inset naranja
+	border-bottom 10px inset naranja
 	&::-webkit-scrollbar
 			display none
 
@@ -256,16 +260,34 @@ nav
 				content "\e600"
 				font-family iconos
 
+.imagencentral
+	
+
+	.platoimg
+		text-align center
+		margin-top 10px
+
+		img
+			border-top 10px ridge gris_oscuro
+			border-bottom 10px ridge gris_oscuro
+			border-left 10px ridge gris_oscuro
+			border-right  10px ridge gris_oscuro
+			border-radius 10%
+			width 70%
+	
 .seleccionarplato
 	
-	.slider
-		img
-			width 80%
-				
+
+			
 	.descripcion
 		background gris_oscuro
 		box-shadow 1px 1px 1px 1px black
 		color white
+		border-left 10px inset naranja
+		border-right 10px inset naranja
+		border-top 10px inset naranja
+		border-bottom 10px inset naranja	
+
 		.titulosp
 			text-align center
 			color naranja
@@ -281,6 +303,7 @@ nav
 
 	.ordenar
 		margin-top 10px
+		margin-bottom 30px
 		position relative
 		padding 0.5em
 		
@@ -309,6 +332,34 @@ nav
 	color white
 	margin-bottom 70px
 	box-shadow 1px 1px 1px 1px black
+	position relative
+
+	.aviso_pedido
+		background naranja
+		width 200px
+		position absolute
+		padding 0.5em
+		bottom 180px
+		left 30%
+		box-shadow 0px -1px 0 0 black
+		&:before
+			border-left 25px solid gris_oscuro
+			border-bottom 10px solid gris_oscuro
+			border-top 20px solid transparent
+			content ""
+			position absolute
+			left 0px
+			top 20px
+		&:after
+			border-right 25px solid gris_oscuro
+			border-bottom 10px solid gris_oscuro
+			border-top 20px solid transparent
+			content ""
+			position absolute
+			left 89%
+			top 17px
+		
+		
 	.plato
 		padding 0.5em
 
@@ -316,7 +367,7 @@ nav
 			background naranja
 			color white
 			text-decoration none
-			padding 0.2em
+			padding 0.1em
 			&:after
 				content "\e601"
 				font-family iconos
@@ -333,40 +384,57 @@ nav
 			content "\e606"
 			font-family iconos
 			margin-left 10px
+		&:hover
+			font-size 18px
 
 		
 
 
 @media screen and (min-width: 768px)
+	
 
+	footer
+		position relative
+		top 400px
 	header
 		.iniciosesion
 			.registro
 				margin-top -25px
 			.redes
 				margin-top 40px	
-
 	
+	.imagencentral
+		width 40%
+		height 40%
+		position relative
+		left 400px
+		display block
+		.platoimg
+			
+			position absolute
+			width 100%
+			top -45px
+			img
+				margin 0 auto
+				width 80%
+
+			
 	.seleccionarplato
 		
-		.slider
-			
-			img
-				width  40%
-				height 300px
-				margin-left 10px
+		
 		.descripcion
 			box-shadow -1px -1px 1px 1px black
 			float right
 			width 300px
-			height 330px
-			margin-top -330px
+			height 350px
 			position relative
 		.ordenar
 			float right
-			position relative
-			margin-right 170px
+			left 130px
+			top 350px
+			
 			.anadir
+				
 				padding 0.2em
 				width 80px
 	
@@ -386,5 +454,15 @@ nav
 				position absolute
 				top 30px
 
+	
 	.pedido
+		position relative
 		margin-top 80px
+		top 380px
+		padding 3em
+		
+			
+		
+
+
+
