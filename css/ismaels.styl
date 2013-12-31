@@ -286,19 +286,53 @@ nav
 		border-left 10px inset naranja
 		border-right 10px inset naranja
 		border-top 10px inset naranja
-		border-bottom 10px inset naranja	
+		border-bottom 10px inset naranja
+		position relative	
 
 		.titulosp
+			background naranja
 			text-align center
-			color naranja
+			color white
 		.tituloingredientes
 			text-align center
 			font-size 16px
-			color naranja
+			background naranja
+			color white
+			padding 0.5em
+			position absolute
+			left -24px
+			&:before
+				content ''
+				border-left 10px solid transparent
+				border-bottom 20px solid transparent
+				border-top 10px solid rgba(black,0.8)
+				position absolute
+				top 34px
+				width 2.5px
+				left 0px
+		.ingredientes
+			margin-top 70px
+		.titulo_precio
+			background naranja
+			text-align center
+			font-size 16px
+			padding 0.5em
+			position absolute
+			left -24px
+			&:before
+				content ''
+				border-left 10px solid transparent
+				border-bottom 20px solid transparent
+				border-top 10px solid rgba(black,0.8)
+				position absolute
+				top 34px
+				width 2.5px
+				left 0px
 		.precio
-			strong
-				color naranja
-
+			position relative
+			top 45px
+			left 40px
+			
 	
 
 	.ordenar

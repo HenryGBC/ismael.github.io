@@ -50,10 +50,14 @@ nav .menu a:hover{background:rgba(0,0,0,0.1)}
 .menu_semana .platosms .icono_agregar:after{content:"\e600";font-family:iconos}
 .imagencentral .platoimg{text-align:center;margin-top:10px;}
 .imagencentral .platoimg img{border-top:10px ridge #444;border-bottom:10px ridge #444;border-left:10px ridge #444;border-right:10px ridge #444;border-radius:10%;width:70%}
-.seleccionarplato .descripcion{background:#444;box-shadow:1px 1px 1px 1px #000;color:#fff;border-left:10px inset #dd4f24;border-right:10px inset #dd4f24;border-top:10px inset #dd4f24;border-bottom:10px inset #dd4f24;}
-.seleccionarplato .descripcion .titulosp{text-align:center;color:#dd4f24}
-.seleccionarplato .descripcion .tituloingredientes{text-align:center;font-size:16px;color:#dd4f24}
-.seleccionarplato .descripcion .precio strong{color:#dd4f24}
+.seleccionarplato .descripcion{background:#444;box-shadow:1px 1px 1px 1px #000;color:#fff;border-left:10px inset #dd4f24;border-right:10px inset #dd4f24;border-top:10px inset #dd4f24;border-bottom:10px inset #dd4f24;position:relative;}
+.seleccionarplato .descripcion .titulosp{background:#dd4f24;text-align:center;color:#fff}
+.seleccionarplato .descripcion .tituloingredientes{text-align:center;font-size:16px;background:#dd4f24;color:#fff;padding:.5em;position:absolute;left:-24px;}
+.seleccionarplato .descripcion .tituloingredientes:before{content:'';border-left:10px solid transparent;border-bottom:20px solid transparent;border-top:10px solid rgba(0,0,0,0.8);position:absolute;top:34px;width:2.5px;left:0}
+.seleccionarplato .descripcion .ingredientes{margin-top:70px}
+.seleccionarplato .descripcion .titulo_precio{background:#dd4f24;text-align:center;font-size:16px;padding:.5em;position:absolute;left:-24px;}
+.seleccionarplato .descripcion .titulo_precio:before{content:'';border-left:10px solid transparent;border-bottom:20px solid transparent;border-top:10px solid rgba(0,0,0,0.8);position:absolute;top:34px;width:2.5px;left:0}
+.seleccionarplato .descripcion .precio{position:relative;top:45px;left:40px}
 .seleccionarplato .ordenar{margin-top:10px;margin-bottom:30px;position:relative;padding:.5em;}
 .seleccionarplato .ordenar .anadir{background:#dd4f24;color:#fff;position:absolute;text-decoration:none;padding:.3em;left:150px;bottom:8px;}
 .seleccionarplato .ordenar .anadir:before{content:"\e608";font-family:iconos}
