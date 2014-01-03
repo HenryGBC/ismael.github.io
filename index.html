@@ -10,14 +10,11 @@
 	<link href='http://fonts.googleapis.com/css?family=Autour+One' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/ismaels.css"/>
 	<script src="js/jquery-2.0.3.min.js"></script>
+	<script src="js/underscore.js"></script>
+	<script src="js/backbone.js"></script>
+	<script src="js/addViews.js"></script>
 	<script src="js/ismaels.js"></script>
-	<script src="js/mq-events.js"></script>
-	<script src="js/jquery.musliderEN-1.0.min.js"></script>
-	
-	<script type="text/javascript">
-	
-		
-	</script>	
+
 	
 
 	
@@ -132,12 +129,12 @@
 
 		</figure>
 	</section>
-	<section class="seleccionarplato">
+	<section id="seleccion_plato" class="seleccionarplato">
 	
 		
 
 		<div class="descripcion">
-			<input type="hidden" name="tituloplato" value="Hallaca"/>
+			<input type="hidden" id="inputPlato" name="tituloplato" value="Hallaca"/>
 			<h3 id ="titulo_plato" class="titulosp">Hallaca</h3>
 			<span class="tituloingredientes"><strong>&nbsp;&nbsp;&nbsp;&nbsp;Ingredientes</strong></span>
 			<div class="ingredientes">
@@ -181,6 +178,23 @@
 				</span>
 			</a>
 		</article>-->
+		<script type="text/template" id="pedidosTemplate">
+		
+			<article id ="<%= plato_pedido %>" class="plato">
+				<a href="#">
+					<span class="nomplato">
+						<strong><%= nombre %> </strong>
+					</span>
+					<span class="cantidad">
+						<strong>
+							<%= cantidad %>
+						</strong>
+					</span>
+				</a>
+			</article>
+
+		</script>
+
 		
 		<div class = "total">
 			Total:<span id = "totalbs"><strong> 
@@ -191,9 +205,9 @@
 	</section>
 	<footer>
 		<h3>
-			<strong>Henry Bravo</strong>
+			<strong>Henry Bravo &reg;</strong>
 			<span class ="mejor">
-				ismael's.com 2013
+				ismael's.com 
 			</span>
 		</h3>	
 	</footer>

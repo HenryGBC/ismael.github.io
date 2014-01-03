@@ -1,5 +1,5 @@
 $(function(){
-		var id = '#plato_pedido';
+		/*var id = '#plato_pedido';
 		var idPlato;
 		$('.anadir').on('click', function(ev){
 			ev.preventDefault();
@@ -33,6 +33,16 @@ $(function(){
 
 			
 			
+*/
+
+
+		window.addPlate = new window.AddView({
+			$el : $('body')
+		});
+
+		window.templates = {};
+		templates.pedidoTemplate = _.template($('#pedidosTemplate').html() );
+
 
 
 });	
